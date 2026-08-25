@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <!-- personal information -->
+    <div>
+        <form>
+            <div>
+                <h2>Personal Information</h2>
+
+                <div class="form-field">
+                    <label>Full Name:</label>
+                    <input type="text" id="name" maxlength="15" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Father's Name:</label>
+                    <input type="text" id="fname" maxlength="30" placeholder="Enter your father's name">
+                </div>
+
+                <div class="form-field">
+                    <label>Date of birth:</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+            </div>
+
+
+
+            <!-- Contact Information -->
+            <div>
+                <h2>Contact Information</h2>
+                <div class="form-field">
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Phone Number:</label>
+
+                    <input type="tel" pattern="[0-9]{10}" maxlength="10" 
+                      id="phone"
+                    inputmode="numeric"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-field">
+                    <label>Address:</label>
+                    <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label>City:</label>
+                    <input type="text" id="city"  placeholder="Enter your city">
+                </div>
+            </div>
+
+            <!-- acount information -->
+            <div>
+                <h2>Account Information</h2>
+                <div class="form-field">
+                    <label>Username:</label>
+                    <input type="text" id="username" placeholder="enter your username">
+                </div>
+
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="enter your username">
+                </div>
+
+                <div class="form-field">
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmPass"  placeholder="enter confirm password">
+                </div>
+            </div>
+
+            <button id="submitBtn">Submit</button>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

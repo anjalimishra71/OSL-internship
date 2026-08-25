@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.moving-dot {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: #ff5b1f89;
+
+    transform: translate(-50%, -50%);
+
+    animation: moveDot 8s linear infinite;
+}
+
+@keyframes moveDot {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.step-card {
+    transition: background 0.15s ease;
+}
+
+.step-card.active {
+    background: linear-gradient(
+        90deg,
+        rgba(237, 171, 130, 0.297),
+        rgba(230, 176, 76, 0.6)
+    );
+}

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const CommentCard = ({ sinData }) => {
     const [comments, setComments] = useState([]);
     const [error, setError] = useState("");
-
+    
     useEffect(() => {
         const fetchComments = async () => {
             try {

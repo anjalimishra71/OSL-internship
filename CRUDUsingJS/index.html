@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Posts -->
+    <section id="postSection">
+
+        <div class="header">
+            <h2>Posts</h2>
+            <button id="create">Create Post</button>
+        </div>
+
+        <div id="cards"></div>
+
+    </section>
+
+
+    <!-- Detail -->
+    <section id="detailSection" class="hidden">
+
+        <div class="header">
+            <button id="edit">Edit Post</button>
+            <button id="delete">Delete</button>
+        </div>
+
+        <div class="singleCard">
+            <p id="postId"></p>
+            <h1 id="postTitle"></h1>
+            <p id="postBody"></p>
+        </div>
+
+        <div class="comments">
+            <h2>Comments</h2>
+            <div id="commentsContainer"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Create / Edit form -->
+    <section id="formPage" class="hidden">
+
+        <h2 id="formTitle">Create Post</h2>
+
+        <form id="postForm">
+
+            <label for="title">Enter Title</label>
+            <input type="text" id="title" required>
+
+            <label for="body">Enter Body</label>
+            <textarea id="body" required></textarea>
+
+            <div class="btns">
+                <button type="button" id="cancelBtn">
+                    Cancel
+                </button>
+
+                <button type="submit" id="saveBtn">
+                    Create Post
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <p id="errorMessage"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
